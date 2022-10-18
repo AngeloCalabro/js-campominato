@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #dedede;
+}
+
+.my-bg-color-blue {
+    background-color: #021732;
+}
+
+.my-color-blue {
+    color: #021732;
+}
+
+.my-color-green {
+    color: #6ed663;
+}
+
+header,
+footer {
+    height: 80px;
+    background-color: #dedede;
+    box-shadow: rgba(2, 23, 50, 0.35) 0px -50px 36px -28px inset;
+}
+
+main {
+    height: calc(100vh - 160px);
+    background-color: rgb(2, 23, 50);
+    overflow: auto;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: #dedede;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #021732;
+}
+
+.green {
+    background-color: #6ed663;
+}
+
+.red {
+    background-color: #ff0000;
+}

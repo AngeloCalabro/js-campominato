@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- LIBRERIA JS -->
+    <script src="./js/libreria.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- TITLE -->
+    <title>js-grafica-cm</title>
+</head>
+
+<body>
+    <div class="vh-100">
+        <header class="d-flex justify-content-around align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="./img/logo.png" alt="logo">
+                <h1 class="my-auto mx-1"><a class="text-decoration-none my-color-blue fw-bold" href="./index.html">Campo
+                        Minato</a>
+                </h1>
+            </div>
+
+            <div class="d-flex justify-content-around align-items-center">
+                <select class="form-control my-color-blue" name="livello" id="livello">
+                    <option value="amator">Amator</option>
+                    <option value="pro">Pro</option>
+                    <option value="hardcore">Hardcore</option>
+                </select>
+                <button id="play" class="btn btn-dark my-bg-color-blue ms-1">
+                    <i class="fa-solid fa-bomb fa-beat"> Play</i>
+                </button>
+            </div>
+        </header>
+
+        <main class="d-flex justify-content-center align-items-center">
+            <h2 class="text-center">Scegli la difficoltà e fai esplodere il play !</h2>
+            <div id="field-game" class="my-color-blue">
+                <!-- <div class="grid">
+                    <div class="square">
+                        <span>1</span>
+                    </div>
+                </div> -->
+            </div>
+        </main>
+
+        <footer class="my-color-blue d-flex justify-content-center align-items-end">
+            <span>By Powered <a class="fw-bold my-color-blue" href="#">Boolean</a></span>
+        </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
