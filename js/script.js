@@ -22,6 +22,7 @@
 
 // Prendo il bottone play
 const btnPlay = document.getElementById('play');
+const msgFinal = document.getElementById('msg-finale');
 
 // Funzione play
 function play() {
@@ -81,11 +82,15 @@ function play() {
             // Punteggio di click accumulato
             score++;
             console.log(score);
+            msgFinal.innerHTML = `Il tuo attuale punteggio è di : ` + score + ` Continua cosi!`
+
             if (score === MAX_ATTEMPT) {
+                msgFinal.innerHTML = `Hai vinto! Sei stato bravissimo`
                 endGame();
             }
         } else {
             this.classList.add('red');
+            msgFinal.innerHTML = `Hai perso! Riprova, sarai più fortunato!`
             endGame();
         }
     }
