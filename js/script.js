@@ -82,7 +82,7 @@ function play() {
             // Punteggio di click accumulato
             score++;
             console.log(score);
-            msgFinal.innerHTML = `Il tuo attuale punteggio è di : ` + score + ` Continua cosi!`
+            msgFinal.innerHTML = `Il tuo attuale punteggio è di : ` + score + ` <br>Continua cosi!`
 
             if (score === MAX_ATTEMPT) {
                 msgFinal.innerHTML = `Hai vinto! Sei stato bravissimo`
