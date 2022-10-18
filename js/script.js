@@ -65,22 +65,23 @@ function play() {
     }
     console.log(bombsPosition)
 
-    // 
+    // funzione di ascolto durante il play
     function listenPlay() {
-        const num = this.querySelector('span').innerText;
+        const num = parseInt(this.querySelector('span').innerText);
+        console.log(num)
+
         // Evita di ricliccare lo stesso numero
         this.removeEventListener('click', listenPlay);
-        console.log('scegli ancora')
 
         // Risposta alla scelta del quadrato
         if (!bombsPosition.includes(num)) {
             this.classList.add('green');
+            console.log('Clicca un altro')
 
             // Punteggio di click accumulato
             score++;
             console.log(score);
             if (score === MAX_ATTEMPT) {
-
                 endGame();
             }
         } else {
@@ -118,15 +119,15 @@ function play() {
         const squares = document.querySelectorAll('.square');
         for (let i = 0; i < squares.length; i++) {
             squares[i].removeEventListener('click', listenPlay);
-
+            let num = i + 1;
             if (bombsPosition.includes(num)) {
                 squares[i].classList.add('red');
             }
-            if (score === MAX_ATTEMPT) {
-                console.log('Hai vinto!');
-            } else {
-                console.log('Hai perso!');
-            }
+        }
+        if (score === MAX_ATTEMPT) {
+            console.log('Hai vinto!');
+        } else {
+            console.log('Hai perso!');
         }
     }
 }
